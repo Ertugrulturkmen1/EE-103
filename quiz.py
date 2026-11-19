@@ -1,0 +1,6 @@
+full_name = input("Enter your full name: ")
+birth_year = input("Enter your birth year: ")
+age = 2026 - int(birth_year)
+print(f"Hello,{full_name}, you are {age} years old.")
+print(f"UPPER: {full_name.upper()}")
+print(f"REVERSED: {full_name[::-1]}")

@@ -1,21 +1,11 @@
 import secret_number
-tahmin = 0
-deneme_sayisi = 0
-
-while tahmin != secret_number.secretNum:
-    tahmin = int(input("Bir sayı tahmin edin: "))
-    deneme_sayisi += 1  # Her tahminde deneme sayısını 1 artırıyoruz
+guess = int(input("Enter your guess: "))
+while guess != secret_number.secretNum:
     
-    if tahmin < secret_number.secretNum:
-        print("Tahmininiz çok düşük.")
-    elif tahmin > secret_number.secretNum:
-        print("Tahmininiz çok yüksek.")
+    if guess < secret_number.secretNumr:
+        print("Too low!")
+    elif guess > secret_number.secretNum:
+        print("Too high!")
     else:
-        print("Tebrikler, gizli sayıyla aynı!")
-        break  # Doğru bilirse döngüden çık
-        
-    # Eğer 5 deneme hakkı dolduysa ve tahmin hala yanlışsa:
-    if deneme_sayisi == 5:
-        # Sonsuz döngüye gir (Programı durdurmak için terminalde Ctrl + C yapmanız gerekir)
-        while True:
-            print("Oh! Noooooo...")
+        print("Congratulations! You guessed the secret number.")    
+    

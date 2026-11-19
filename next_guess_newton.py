@@ -11,4 +11,4 @@ print("Current estimate cube:", guess ** 3)
 next_guess = guess - (guess ** 3 - x) / (3 * guess ** 2)
 
 # 5. Yeni tahmini ekrana yazdır
-print("Next guess:", next_guess)
+print(next_guess)
